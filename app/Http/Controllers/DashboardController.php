@@ -27,4 +27,17 @@ class DashboardController extends Controller
         $data->save() ;
         return redirect()->route('user.dashboard');
     }
+    public function edit (Skill $id) {
+        $data=$id ;
+        return view('admin.edit.skill' , compact('data')) ;
+    }
+    public function update (Skill $id , Request $request) {
+        $data=$id ;
+        $data->nom = $request->nom ;
+        $data->description=$request->description ;
+        $data->difficulte=$request->difficulte ;
+        $data->image = $request->image ;
+        $data->save() ;
+        return redirect()->route('user.dashboard');
+    }
 }

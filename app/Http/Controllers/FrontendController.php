@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Skill;
+use App\Models\Projet;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
     public function home() {
-        return view('welcome');
+        $data=Skill::all() ;
+        return view('welcome' , compact('data'));
     }
     public function about() {
-        return view('pages.about') ;
+        $data=About::all() ;
+        return view('pages.about ' , compact('data')) ;
 
     }
     public function contact() {
@@ -23,12 +27,11 @@ class FrontendController extends Controller
 
     }
     public function projet() {
-        $data=Skill::all() ;
-        return view('pages.projet', compact('data')) ;
+        $data=Projet::all() ;
+        return view('pages.projet' , compact('data')) ;
     }
     public function dashboard () {
         $data=Skill::all() ;
-
         return view('admin.dashboard',compact('data')) ;
     }
 

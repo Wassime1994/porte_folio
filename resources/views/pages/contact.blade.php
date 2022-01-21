@@ -12,20 +12,15 @@
           <div class="row">
             <div class="col-lg-8">
               <div class="content-column-content">
-                <h1>Get in touch</h1>
-                <p class="lead">When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then</p>
-                <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
-                <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
-                <h4>You can find me also on:</h4>
-                <p class="social social--big">
-                    <a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a>
-                    <a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
-                <h4>Drop me a line, maybe?</h4>
-                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline.</p>
-                <form id="contact-form" method="post" action="#" class="contact-form form">
+                <h1>Me contacter ?</h1>
+                <p class="lead">
+                    Je suis disponible, motivé, organiséet résistant au stress, si bien
+                    que je possède tous les atouts pour répondre à vos attentes sur ce poste. J'espère
+                    ainsi avoir l'opportunité de vous rencontrer prochainement
+                    afin de pouvoir vous démontrer ma détermination à rejoindre vos équipes
+                </p>
+
+                <form id="contact-form" method="post" action="#" class="contact-form form m-2">
                   <div class="controls">
                     <div class="row">
                       <div class="col-md-6">

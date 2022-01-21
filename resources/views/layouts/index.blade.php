@@ -20,15 +20,16 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href={{asset("img/favicon.png")}}></head>
 <body>
-
     <div class="test">
     </div>
-    <div class="general">
-    @include("components.nav")
-        @yield('content')
-    </div>
-    <div class="footer">
-        @include('components.footer')
+    <div class="">
+        <div class="general">
+        @include("components.nav")
+            @yield('content')
+        </div>
+        <div class="footer">
+            @include('components.footer')
+        </div>
     </div>
 <script src={asset("vendor/jquery/jquery.min.js")}}></script>
 <script src={{asset('js/main.js')}}></script>
