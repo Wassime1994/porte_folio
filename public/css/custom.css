@@ -17,3 +17,11 @@ body {
 .footer {
     position: absolute;
 }
+.imgProject {
+    height: 350px;
+    width: 100%;
+    border-radius: 20px;
+}
+.box-masonry {
+    border-radius: 20px;
+}

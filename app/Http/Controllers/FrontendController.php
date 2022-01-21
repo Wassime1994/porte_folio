@@ -26,4 +26,11 @@ class FrontendController extends Controller
         $data=Skill::all() ;
         return view('pages.projet', compact('data')) ;
     }
+    public function dashboard () {
+        $data=Skill::all() ;
+
+        return view('admin.dashboard',compact('data')) ;
+    }
+
+
 }
