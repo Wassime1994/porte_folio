@@ -16,6 +16,12 @@ class AboutController extends Controller
         return view('admin.aboutcreate') ;
     }
     public function store(Request $request) {
+
+        $validate=$request->validate([
+            'titre'=>'required|Min:5' ,
+            "description"=>'required|Min:10',
+            "image"=>'required'
+        ]) ;
         $data=new About ;
         $data->titre=$request->titre ;
         $data->description=$request->description ;

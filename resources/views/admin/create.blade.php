@@ -5,26 +5,44 @@
     <form action={{route('user.store')}} method="POST"class="md:w-1/2-screen m-0 p-5 bg-white w-full tw-h-full shadow md:rounded-lg">
         @csrf
       <div class="text-2xl text-indigo-900">ADD <small class="pl-2 text-gray-500">Nouveau Skill </small></div>
-
       <div class="flex-col flex py-3">
         <label class="pb-2 text-gray-700 font-semibold">Nom</label>
-        <input name="nom" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" >
-      </div>
+        <input type="text" name="nom" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" value={{old("nom")}}  >
+        <span style="color: red;">
+            @error("nom")
+            {{ $message }}
+            @enderror
+        </span>
+    </div>
 
       <div class="flex-col flex py-3">
         <label class="pb-2 text-gray-700 font-semibold">Description</label>
-        <input name="description" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" >
-      </div>
+    <input type="text"name="description"   class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200"  value={{ old("description") }}>
+ <span style="color: red;">
+    @error("description")
+    {{ $message }}
+    @enderror
+</span>
+</div>
 
       <div class="flex-col flex py-3">
         <label class="pb-2 text-gray-700 font-semibold">Difficulte</label>
-        <input name="difficulte" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200">
-      </div>
+        <input name="difficulte"   type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" value={{ old("difficulte") }}>
+        <span style="color: red;">
+            @error("difficulte")
+            {{ $message }}
+            @enderror
+        </span>
+    </div>
 
       <div class="flex-col flex py-3">
         <label class="pb-2 text-gray-700 font-semibold">Image</label>
-        <input name="image" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200">
-
+        <input name="image" type="text"  class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200"  value={{ old("image") }}>
+        <span style="color: red;">
+            @error("image")
+            {{ $message }}
+            @enderror
+        </span>
 
       <div class="mt-2 py-10">
         <button type="submit" class="p-3 bg-indigo-400 text-white w-full hover:bg-indigo-300">Submit Form</button>

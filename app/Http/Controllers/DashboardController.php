@@ -19,6 +19,12 @@ class DashboardController extends Controller
         return view('admin.create');
     }
     public function store(Request $request) {
+            $validate=$request->validate([
+                'nom'=>'required|Min:5' ,
+                "description"=>'required|Min:10',
+                "difficulte"=>'required' ,
+                "image"=>'required'
+            ]) ;
         $data=new Skill ;
         $data->nom=$request->nom ;
         $data->description=$request->description ;

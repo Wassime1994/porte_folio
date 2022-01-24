@@ -8,18 +8,32 @@
 
       <div class="flex-col flex py-3">
         <label class="pb-2 text-gray-700 font-semibold">Nom Projet</label>
-        <input name="nom" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" >
-      </div>
+        <input name="nom" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" value={{old('nom')}}>
+        <span style="color: red;">
+            @error("nom")
+            {{ $message }}
+            @enderror
+        </span>
+    </div>
 
       <div class="flex-col flex py-3">
         <label class="pb-2 text-gray-700 font-semibold">Language Utilisé</label>
-        <input name="language" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" >
-      </div>
+        <input name="language" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" value={{old('language')}}>
+        <span style="color: red;">
+            @error("language")
+            {{ $message }}
+            @enderror
+        </span>
+    </div>
 
       <div class="flex-col flex py-3">
         <label class="pb-2 text-gray-700 font-semibold">Image</label>
-        <input name="image" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200">
-
+        <input name="image" type="text" class="p-2 shadow rounded-lg bg-gray-100 outline-none focus:bg-gray-200" value={{old('image')}}>
+        <span style="color: red;">
+            @error("image")
+            {{ $message }}
+            @enderror
+        </span>
 
       <div class="mt-2 py-10">
         <button type="submit" class="p-3 bg-indigo-400 text-white w-full hover:bg-indigo-300">Submit Form</button>

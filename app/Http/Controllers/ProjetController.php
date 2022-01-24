@@ -25,6 +25,11 @@ class ProjetController extends Controller
         return view('admin.create.projetform');
     }
     public function store(Request $request) {
+        $validate=$request->validate([
+            'nom'=>'required|Min:5' ,
+            "language"=>'required|Min:10',
+            "image"=>'required'
+        ]) ;
         $data=new Projet;
         $data->nom=$request->nom ;
         $data->language=$request->language ;
