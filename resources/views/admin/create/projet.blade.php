@@ -88,7 +88,12 @@
                                     @empty
                                     <h1>Rien a afficher ici</h1>
                                   @endforelse
+
+
                         </tbody>
+                        <div>
+                            {{$data->links()}}
+                        </div>
                     </table>
                             </div>
                         </div>

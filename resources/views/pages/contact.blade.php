@@ -20,7 +20,7 @@
                     afin de pouvoir vous démontrer ma détermination à rejoindre vos équipes
                 </p>
 
-                <form id="contact-form" method="post" action="#" class="contact-form form m-2">
+                <form id="contact-form" method="post" action={{route('contact.store',$data->id)}} class="contact-form form m-2">
                   <div class="controls">
                     <div class="row">
                       <div class="col-md-6">

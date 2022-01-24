@@ -27,9 +27,7 @@
         @include("components.nav")
             @yield('content')
         </div>
-        <div class="footer">
             @include('components.footer')
-        </div>
     </div>
 <script src={asset("vendor/jquery/jquery.min.js")}}></script>
 <script src={{asset('js/main.js')}}></script>

@@ -31,7 +31,7 @@ class FrontendController extends Controller
         return view('pages.projet' , compact('data')) ;
     }
     public function dashboard () {
-        $data=Skill::all() ;
+        $data=Skill::orderBy('created_at' , 'desc')->paginate(2);
         return view('admin.dashboard',compact('data')) ;
     }
 

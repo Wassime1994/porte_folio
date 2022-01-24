@@ -87,7 +87,7 @@
                                             @empty
                                 <h2> Aucun skills ajouté pour l'instant</h2>
                                 @endforelse
-
+                                {{$data->links()}}
                         </tbody>
                     </table>
                             </div>

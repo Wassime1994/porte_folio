@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProjetController;
@@ -56,5 +57,5 @@ Route::post('/admin/projet/store', [ProjetController::class ,"store"])->name('pr
 // CONTACT
 
 
-
+Route::post('/admin/contact', [ContactController::class , "store"])->name('admin.contact') ;
 

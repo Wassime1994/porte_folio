@@ -8,9 +8,11 @@ use Illuminate\Http\Request;
 class ProjetController extends Controller
 {
     public function index () {
-        $data=Projet::all() ;
-        return view('admin.create.projet' , compact('data')) ;
+        $data=Projet::orderBy('created_at' , 'desc')->paginate(2);
+        // $allUsers = Projet::orderBy('created_at' , 'desc')->paginate(1);
+        return view('admin.create.projet' , compact('data' )) ;
     }
+
     public function destroy(Projet $id) {
         $id->delete();
         return redirect()->back() ;

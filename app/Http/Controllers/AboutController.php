@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     public function index() {
-        $data=About::all() ;
+
+        $data=About::orderBy('created_at' , 'desc')->paginate(2);
         return view('admin.createAbout' , compact('data')) ;
     }
     public function create () {

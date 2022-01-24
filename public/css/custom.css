@@ -16,6 +16,9 @@ body {
 }
 .footer {
     position: absolute;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10%;
 }
 .imgProject {
     height: 350px;
