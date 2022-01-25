@@ -47,11 +47,7 @@
       <div class="mt-2 py-10">
         <button type="submit" class="p-3 bg-indigo-400 text-white w-full hover:bg-indigo-300">Submit Form</button>
       </div>
-      <div class="mt-2 pb-2">
-        <button type="submit" class="py-3 bg-red-400 text-white w-full hover:bg-indigo-300">
-            <a href={{route('user.dashboard')}}> Annuler</a>
-        </button>
-      </div>
+
 
       <div class=" my-10 transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
         <!-- Dot Follwing the Left Vertical Line -->
